@@ -1,24 +1,24 @@
 {
     "0xa4c138edb056f06c": {
         "state": "ON",
-        "voltage": 234,
+        "voltage": 233,
         "countdown": 0,
         "power_outage_memory": "restore",
         "indicator_mode": "off/on",
         "child_lock": "UNLOCK",
-        "energy": 3.01,
-        "power": 12,
+        "energy": 3.02,
+        "power": 11,
         "current": 0.05,
         "linkquality": 140
     },
     "0xa4c1381e9cba687e": {
         "state": "ON",
-        "voltage": 233,
+        "voltage": 232,
         "countdown": 0,
         "indicator_mode": "off/on",
         "power": 3,
         "linkquality": 168,
-        "energy": 0.77,
+        "energy": 0.78,
         "current": 0.02,
         "power_outage_memory": "restore",
         "child_lock": "UNLOCK"
