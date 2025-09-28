@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except for README.md and YAML files
+!*.md
+!.gitignore
+!**/*.yaml
