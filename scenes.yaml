@@ -1,0 +1,84 @@
+- id: '1758808378419'
+  name: Alle lampen woonkamer
+  entities:
+    light.0x0c2a6ffffe4866c6:
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - brightness
+      effect:
+      color_mode:
+      brightness:
+      friendly_name: Hanglamp woonkamer
+      supported_features: 44
+      state: 'off'
+    switch.0xa4c138edb056f06c:
+      friendly_name: Lamp bij Bank
+      state: 'off'
+    number.0xa4c138edb056f06c_countdown:
+      min: 0
+      max: 43200
+      step: 1
+      mode: auto
+      unit_of_measurement: s
+      friendly_name: Lamp bij Bank Countdown
+      state: '0'
+    select.0xa4c138edb056f06c_indicator_mode:
+      options:
+      - 'off'
+      - off/on
+      - on/off
+      - 'on'
+      friendly_name: Lamp bij Bank Indicator mode
+      state: off/on
+    switch.0xa4c1381e9cba687e:
+      friendly_name: Lamp bij TV
+      state: 'off'
+    number.0xa4c1381e9cba687e_countdown:
+      min: 0
+      max: 43200
+      step: 1
+      mode: auto
+      unit_of_measurement: s
+      friendly_name: Lamp bij TV Countdown
+      state: '0'
+    select.0xa4c1381e9cba687e_indicator_mode:
+      options:
+      - 'off'
+      - off/on
+      - on/off
+      - 'on'
+      friendly_name: Lamp bij TV Indicator mode
+      state: off/on
+    light.0x6cfd22fffed824e1:
+      min_color_temp_kelvin: 2202
+      max_color_temp_kelvin: 4000
+      min_mireds: 250
+      max_mireds: 454
+      effect_list:
+      - blink
+      - breathe
+      - okay
+      - channel_change
+      - finish_effect
+      - stop_effect
+      supported_color_modes:
+      - color_temp
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: Lamp eettafel
+      supported_features: 44
+      state: 'off'
+  metadata: {}
+  icon: mdi:lightbulb-multiple

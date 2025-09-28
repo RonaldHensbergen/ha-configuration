@@ -1,0 +1,14 @@
+- trigger:
+  - trigger: "event"
+    event_type: "android.intent_received"
+    event_data:
+      android.bluetooth.device.extra.DEVICE: "4C:72:74:C4:B1:9B"
+      intent: "android.bluetooth.device.action.BATTERY_LEVEL_CHANGED"
+  sensor:
+  - name: "RP_PRINCE Battery level"
+    unique_id: "UUID_RP_BATTERY"
+    device_class: "battery"
+    unit_of_measurement: "%"
+    state_class: "measurement"
+    availability: "{{ trigger.event['data']['android.bluetooth.device.extra.BATTERY_LEVEL'] != '-1' }}"
+    state: "{{ trigger.event['data']['android.bluetooth.device.extra.BATTERY_LEVEL'] }}"

@@ -1,0 +1,48 @@
+{
+    "0xa4c138edb056f06c": {
+        "state": "ON",
+        "voltage": 234,
+        "countdown": 0,
+        "power_outage_memory": "restore",
+        "indicator_mode": "off/on",
+        "child_lock": "UNLOCK",
+        "energy": 3.01,
+        "power": 12,
+        "current": 0.05,
+        "linkquality": 140
+    },
+    "0xa4c1381e9cba687e": {
+        "state": "ON",
+        "voltage": 233,
+        "countdown": 0,
+        "indicator_mode": "off/on",
+        "power": 3,
+        "linkquality": 168,
+        "energy": 0.77,
+        "current": 0.02,
+        "power_outage_memory": "restore",
+        "child_lock": "UNLOCK"
+    },
+    "0x6cfd22fffed824e1": {
+        "state": "ON",
+        "update": {
+            "state": "idle",
+            "installed_version": 65554,
+            "latest_version": 65554
+        },
+        "color_mode": "color_temp",
+        "color_temp": 454,
+        "brightness": 110,
+        "linkquality": 160
+    },
+    "0x0c2a6ffffe4866c6": {
+        "state": "ON",
+        "brightness": 3,
+        "update": {
+            "state": "idle",
+            "installed_version": 16777282,
+            "latest_version": 16777282
+        },
+        "linkquality": 156
+    }
+}

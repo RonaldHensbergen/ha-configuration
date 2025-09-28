@@ -1,0 +1,13 @@
+- platform: template
+  sensors:
+    rp_prince:
+      friendly_name: "RP Prince"
+      value_template: >
+        {% if '4C:72:74:C4:B1:9B (RP_PRINCE)' in state_attr('sensor.sm_a566b_bluetooth_connection','connected_paired_devices') %} on
+        {% else %} off
+        {% endif %}
+      icon_template: mdi:headphones
+ 
+- platform: folder 
+  folder: "/config/www/radio" 
+  filter: "*"

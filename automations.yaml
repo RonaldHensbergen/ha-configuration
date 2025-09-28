@@ -1,0 +1,50 @@
+- id: '1757951058371'
+  alias: Lampen aan bij zonsondergang
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 0
+  conditions:
+  - condition: zone
+    entity_id: device_tracker.iphone_van_jelle
+    zone: zone.home
+  - condition: zone
+    entity_id: device_tracker.sm_a566b
+    zone: zone.home
+  actions:
+  - type: turn_on
+    device_id: d99fb1a6d03fc0e45f708fb53172607e
+    entity_id: c6bda98c1251bf1a44a628d04b578c1b
+    domain: switch
+  - type: turn_on
+    device_id: 1798e0a545d12ae7831db28a287471a6
+    entity_id: 0f9d759af3b4dfaa90b9ee4963757b9e
+    domain: switch
+  mode: single
+- id: '1758650289906'
+  alias: New automation
+  description: ''
+  triggers:
+  - trigger: template
+    value_template: 'false'
+  conditions: []
+  actions:
+  - action: media_player.play_media
+    metadata: {}
+    data:
+      media:
+        media_content_id: media-source://radio_browser/9617a958-0601-11e8-ae97-52543be04c81
+        media_content_type: audio/aac
+        metadata:
+          title: Radio Paradise Main Mix
+          thumbnail: https://radioparadise.com/apple-touch-icon.png
+          media_class: music
+          children_media_class:
+          navigateIds:
+          - media_content_type: music
+            media_content_id: media-source://radio_browser/popular
+          browse_entity_id: media_player.woonkamer
+    target:
+      device_id: 099a362715d0e6db40755ea9a78f31ef
+  mode: single

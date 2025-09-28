@@ -1,0 +1,56 @@
+version: 4
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://core-mosquitto:1883
+  user: mqtt-user
+  password: mqtt
+serial:
+  baudrate: 115200
+  rtscts: false
+  port: >-
+    /dev/serial/by-id/usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_847252350874ef11a3aedd1e313510fd-if00-port0
+  adapter: ember
+advanced:
+  log_level: info
+  channel: 11
+  network_key:
+    - 30
+    - 60
+    - 177
+    - 181
+    - 117
+    - 79
+    - 233
+    - 194
+    - 5
+    - 4
+    - 180
+    - 14
+    - 26
+    - 168
+    - 175
+    - 253
+  pan_id: 34149
+  ext_pan_id:
+    - 229
+    - 167
+    - 40
+    - 189
+    - 75
+    - 227
+    - 164
+    - 117
+frontend:
+  enabled: true
+  port: 8099
+homeassistant:
+  enabled: true
+devices:
+  '0xa4c138edb056f06c':
+    friendly_name: Lamp bij Bank
+  '0xa4c1381e9cba687e':
+    friendly_name: Lamp bij TV
+  '0x6cfd22fffed824e1':
+    friendly_name: Lamp Eettafel
+  '0x0c2a6ffffe4866c6':
+    friendly_name: Hanglamp woonkamer
